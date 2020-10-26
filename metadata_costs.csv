@@ -1,0 +1,378 @@
+﻿"TableInfos"
+"ID";"Title";"ShortTitle";"Identifier";"Summary";"Modified";"ReasonDelivery";"ExplanatoryText";"Language";"Catalog";"Frequency";"Period";"ShortDescription";"Description";"DefaultPresentation";"DefaultSelection";"GraphTypes";"OutputStatus";"Source";"MetaDataModified";"SearchPriority"
+"0";"Housing costs of households; dwelling characteristics, region";"Housing costs of households by region";"84488ENG";"Housing costs, Housing cost ratio, Skewed rent
+Household characteristics, Dwelling characteristics, Region";"2019-04-04T02:00:00";"New";"";"en";"CBS";"Threeyearly";"2012,2015,2018";"
+This table contains figures on the housing costs of private households in independent homes. Households living (temporarily) in a house free of charge are not included. The figures are presented for both owners and tenants and can be further divided into various characteristics of the household and the dwelling, including region. Figures at the municipal level are only provided for municipalities who had more than 100.000 inhabitants in 2018.
+
+Data available from: 2012
+
+Status of the figures: final
+
+Changes as of 4 April 2019:
+New table.
+
+When will new figures be published?
+Figures over reporting year 2021 will be published in 2022.
+";"CONTENTS
+
+1. General information
+2. Definitions and explanation of symbols
+3. Links to relevant tables and articles
+4. Sources and methods
+5. Further information
+
+
+1. GENERAL INFORMATION
+
+This table contains figures on the housing costs of private households in independent homes. Households living (temporarily) in a house free of charge are not included. The figures are presented for both owners and tenants and can be further divided into various characteristics of the household and the dwelling, including region. Figures at the municipal level are only provided for municipalities who had more than 100.000 inhabitants in 2018.
+
+Data available from: 2012
+
+Status of the figures: final
+
+Changes as of 4 April 2019:
+New table.
+
+When will new figures be published?
+Figures over reporting year 2021 will be published in 2022.
+
+2. DEFINITIONS AND EXPLANATION OF SYMBOLS
+
+Private household:
+One or more persons living in a dwelling together and meeting their own daily needs (i.e. not as companies). 
+
+Independent home:
+A complete dwelling, i.e. a dwelling occupied by only one household with facilities including toilet, bathroom and kitchen which are not shared with other households.
+Explanation of symbols:
+
+Empty cell	: figure not applicable
+. 		: figure is unknown, insufficiently reliable or confidential
+*		: provisional figure 
+**		: revised provisional figure
+
+Figures are not published (.) in WoON when point estimate is based on fewer than 30 observations.
+
+3. LINKS TO RELEVANT TABLES AND ARTICLES
+
+Relevant tables: 
+<a href='https://opendata.cbs.nl/statline/#/CBS/en/dataset/84487ENG'>Housing costs of households; household and dwelling characteristics</a>
+
+Relevant articles: 
+More information can be found at the theme page <a href='https://www.cbs.nl/en-gb/economy/construction-and-housing'>Construction and housing.</a>
+
+4. SOURCES AND METHODS
+
+The Netherlands’ Housing Survey (WoON) is a three-yearly survey on the housing situation of the Dutch population and their living requirements and needs. Elements covered include the composition of households, the dwelling and living environment, housing costs, living requirements and housing relocations.
+
+The WoON survey is a sample survey. This implies that the figures published are estimates. The accuracy of these estimates is indicated in the table by the ‘95% confidence interval’.  This interval contains the true (unknown) value with 95% certainty. 
+
+The survey method for this table can be found in the survey description of <a href='https://www.cbs.nl/en-gb/our-services/methods/surveys/korte-onderzoeksbeschrijvingen/netherlands-housing-survey--woon--'>Netherlands’ Housing Survey (WoON).</a>
+
+5. FURTHER INFORMATION
+
+<a href='https://www.cbs.nl/en-gb/about-us/contact/infoservice'>Infoservice</a>
+
+Copyright (c) Statistics Netherlands, The Hague/Heerlen
+Reproduction is permitted, provided Statistics Netherlands is quoted as the source. 
+";"ts=1554128044431&graphtype=Table&r=Region&k=Topics,OwnerOrTenant,Periods&t=DwellingCharacteristics,Accuracy&_gu=PV";"$filter=((OwnerOrTenant eq 'T001096') or (OwnerOrTenant eq 'A025403') or (OwnerOrTenant eq 'A025404')) and ((DwellingCharacteristics eq 'T001100')) and ((Accuracy eq 'MW00000')) and ((Periods eq '2012JJ00') or (Periods eq '2015JJ00') or (Periods eq '2018JJ00')) and ((substringof('NL',Region)) or (substringof('PV',Region)))&$select=OwnerOrTenant, DwellingCharacteristics, Accuracy, Periods, Region, TotalHousingCosts_1, HousingCostRatio_4";"Table,Bar,Line,Map";"Regular";"CBS.";"2019-04-04T02:00:00";"2"
+"DataProperties"
+ID;Position;ParentID;Type;Key;Title;Description;ReleasePolicy;Datatype;Unit;Decimals;Default
+"0";"0";;"Dimension";"OwnerOrTenant";"Owner or tenant";"";;;;;
+"1";"1";;"Dimension";"DwellingCharacteristics";"Dwelling characteristics";"";;;;;
+"2";"2";;"Dimension";"Accuracy";"Accuracy";"";;;;;
+"3";"3";;"GeoDimension";"Region";"Region";"";;;;;
+"4";"4";;"TimeDimension";"Periods";"Periods";"";"true";;;;
+"5";;;"TopicGroup";"";"Housing costs";"";;;;;
+"6";"5";"5";"Topic";"TotalHousingCosts_1";"Total housing costs";"The average total (net) amount spent on housing such as rent or mortgage, including additional housing costs such as property tax, premiums paid for home insurance, sewerage charges, gas, water and electricity and maintenance.
+";;"Long";"euro";"0";"Impossible"
+"7";"6";"5";"Topic";"NetRentOrMortgage_2";"Net rent or mortgage ";"For tenants this is the rent minus the rent subsidy (if applicable). For owners these are the mortgage, but also the property tax, premiums paid for home insurance and maintenance costs.";;"Long";"euro";"0";"Impossible"
+"8";"7";"5";"Topic";"AdditionalHousingCosts_3";"Additional housing costs";"Costs that are applicable to every household, tenants as well as owners. These are the taxes paid to the municipalities and public bodies and the costs for gas, water and electricity.";;"Long";"euro";"0";"Impossible"
+"9";"8";;"Topic";"HousingCostRatio_4";"Housing cost ratio";"The average percentage of disposable household income spent on housing.
+";;"Double";"%";"1";"Impossible"
+"10";;;"TopicGroup";"";"Skewed rent ";"Rent disproportionate to the household income.
+
+
+
+";;;;;
+"11";"9";"10";"Topic";"NonSkewedRent_5";"Non-skewed rent";"Non-skewed rent: the rent of the home is proportionate to the household income. 
+";;"Double";"%";"1";"Impossible"
+"12";"10";"10";"Topic";"SkewedTowardsCheapRent_6";"Skewed towards cheap rent";"Households that are eligible for housing benefit and have a before tax rent higher than a specified level. Their level of rent is below that expected for a household with this income.";;"Double";"%";"1";"Impossible"
+"13";"11";"10";"Topic";"SkewedTowardsExpensiveRent_7";"Skewed towards expensive rent";"Households with an income above a specified income level and a before tax rent under the liberalisation level. Their level of rent is above that expected for a household with this income.
+";;"Double";"%";"1";"Impossible"
+"OwnerOrTenant"
+Key;Title;Description
+"T001096";"Total";""
+"A025403";"Owner";""
+"A025404";"Tenant";""
+"A025405";"Rents dwelling from private owner";"Private owners include institutional investors (pension funds, insurance and investment companies) and private individuals who rent out dwellings directly or through an agent."
+"A025406";"Rents dwelling from housing corporation";"Social housing bodies include private housing corporations, non-profit organisation focusing on housing specific groups (students, seniors, etc.) and municipal housing corporations (see also housing corporations and municipal housing corporations)."
+"DwellingCharacteristics"
+Key;Title;Description
+"2060100";"Dwelling: 1st 25%-group WOZ";"Dwelling in 1st 25%-group in terms of value under the real estate appraisal act (WOZ).
+Households with own dwellings are classified  into four groups of equal size according to the WOZ value of the dwelling. The division into the four groups takes place after  households with own dwellings have been ordered from low to high WOZ value."
+"2060110";"Dwelling: 2nd 25%-group WOZ";"Dwelling in 2nd 25%-group in terms of value under the real estate appraisal act (WOZ).
+Households with own dwellings are classified  into four groups of equal size according to the WOZ value of the dwelling. The division into the four groups takes place after  households with own dwellings have been ordered from low to high WOZ value."
+"2060120";"Dwellings: 3rd 25%-group WOZ";"Dwelling in 3rd 25%-group in terms of value under the real estate appraisal act (WOZ).
+Households with own dwellings are classified  into four groups of equal size according to the WOZ value of the dwelling. The division into the four groups takes place after  households with own dwellings have been ordered from low to high WOZ value."
+"2060130";"Dwellings: 4th 25%-group WOZ";"Dwelling in 4th 25%-group in terms of value under the real estate appraisal act (WOZ).
+Households with own dwellings are classified  into four groups of equal size according to the WOZ value of the dwelling. The division into the four groups takes place after  households with own dwellings have been ordered from low to high WOZ value."
+"T001100";"Total dwellings";""
+"ZW10290";"Type of dwelling: single-family; total";"Every dwelling that is a building in its own right. This includes detached houses, semi-detached houses, farms with a residential unit and all terraced dwellings."
+"ZW10320";"Type of dwelling: detached house";"Every dwelling that is a building in its own right. This includes detached houses, semi-detached houses, farms with a residential unit and all terraced dwellings.  A detached house is a single-family house without attachment to any other houses or buildings."
+"ZW10300";"Type of dwelling: semi-detached house";"Every dwelling that is a building in its own right. This includes detached houses, semi-detached houses, farms with a residential unit and all terraced dwellings. A semi-detached house is a single-family house with an attachment to one other single-family house."
+"ZW25806";"Type of dwelling: corner house";""
+"ZW25805";"Type of dwelling: terraced house";""
+"ZW10340";"Type of dwelling: multi-family";"Every dwelling that is a building in its own right together with other units, such as a commercial unit. This includes flats, apartments in apartment blocks, dwellings with shared entrance halls, upper and lower level flats and dwellings with separate access above a commercial unit."
+"ZW25790";"Living surface: less than  75 m²";""
+"ZW25791";"Living surface: 75 to 99 m²";""
+"ZW25792";"Living surface: 100 to 149 m²";""
+"ZW25793";"Living surface: 150 m² or more";""
+"ZW25799";"Year of construction: 1000 to 1945";"Indication of the year of construction of a building which is occupied by a dwelling. Originally this is the year in which construction is finished or the building is delivered. The year of construction does not change if there is an alteration to the building at a later stage. For dwellings which are located across several buildings, the oldest year of construction is taken."
+"ZW10412";"Year of construction: 1946 to 1970";"Indication of the year of construction of a building which is occupied by a dwelling.
+Originally this is the year in which construction is finished or the building is delivered.
+The year of construction does not change if there is an alteration to the building at a later stage. For dwellings which are located across several buildings, the oldest year of construction is taken."
+"ZW10413";"Year of construction: 1971 to 1985";"Indication of the year of construction of a building which is occupied by a dwelling.
+Originally this is the year in which construction is finished or the building is delivered.
+The year of construction does not change if there is an alteration to the building at a later stage. For dwellings which are located across several buildings, the oldest year of construction is taken."
+"ZW10414";"Year of construction: 1986 to 2000";"Indication of the year of construction of a building which is occupied by a dwelling.
+Originally this is the year in which construction is finished or the building is delivered.
+The year of construction does not change if there is an alteration to the building at a later stage. For dwellings which are located across several buildings, the oldest year of construction is taken."
+"ZW10415";"Year of construction: from 2001";"Indication of the year of construction of a building which is occupied by a dwelling.
+Originally this is the year in which construction is finished or the building is delivered.
+The year of construction does not change if there is an alteration to the building at a later stage. For dwellings which are located across several buildings, the oldest year of construction is taken."
+"ZW10270";"Own garden, grounds etc. : included";"The dwelling has its own garden, grounds, patio or yard."
+"ZW10280";"Own garden, grounds etc. : not included";"The dwelling does not have its own garden, grounds, patio or yard."
+"Accuracy"
+Key;Title;Description
+"MW00000";"Value";""
+"MOG0095";"Lower bound 95% confidence interval";"This is the lower bound of the interval that contains the true (unknown) value with 95% certainty."
+"MBG0095";"Upper bound 95% confidence interval";"This is the upper bound of the interval that contains the true (unknown) value with 95% certainty"
+"Region"
+Key;Title;Description
+"NL01    ";"The Netherlands";""
+"LD01    ";"Noord-Nederland (LD)";"LD = Landsdeel
+
+Noord-Nederland: Groningen, Friesland, Drenthe
+
+Regionale groepering van provincies. Nederland telt 4 landsdelen."
+"LD02    ";"Oost-Nederland (LD)";"LD = Landsdeel
+
+Oost-Nederland: Overijssel, Flevoland, Gelderland
+
+Regionale groepering van provincies. Nederland telt 4 landsdelen."
+"LD03    ";"West-Nederland (LD)";"LD = Landsdeel
+
+West-Nederland: Utrecht, Noord-Holland, Zuid-Holland, Zeeland
+
+Regionale groepering van provincies. Nederland telt 4 landsdelen."
+"LD04    ";"Zuid-Nederland (LD)";"LD = Landsdeel
+
+Zuid-Nederland: Noord-Brabant, Limburg
+
+Regionale groepering van provincies. Nederland telt 4 landsdelen."
+"PV20    ";"Groningen (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"PV21    ";"Friesland (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"PV22    ";"Drenthe (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"PV23    ";"Overijssel (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"PV24    ";"Flevoland (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"PV25    ";"Gelderland (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"PV26    ";"Utrecht (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"PV27    ";"Noord-Holland (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"PV28    ";"Zuid-Holland (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"PV29    ";"Zeeland (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"PV30    ";"Noord-Brabant (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"PV31    ";"Limburg (PV)";"PV = Provincie
+
+Bestuurlijke onderverdeling van het Nederlands grondgebied. Sinds het instellen van de provincie Flevoland per 1 januari 1986 telt Nederland 12 provincies."
+"CR01    ";"Oost-Groningen (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR02    ";"Delfzijl en omgeving (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR03    ";"Overig Groningen (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR04    ";"Noord-Friesland (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR05    ";"Zuidwest-Friesland (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR06    ";"Zuidoost-Friesland (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR07    ";"Noord-Drenthe (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR08    ";"Zuidoost-Drenthe (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR09    ";"Zuidwest-Drenthe (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR10    ";"Noord-Overijssel (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR11    ";"Zuidwest-Overijssel (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR12    ";"Twente (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR13    ";"Veluwe (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR14    ";"Achterhoek (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR15    ";"Arnhem/Nijmegen (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR16    ";"Zuidwest-Gelderland (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR17    ";"Utrecht (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR18    ";"Kop van Noord-Holland (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR19    ";"Alkmaar en omgeving (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR20    ";"IJmond (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR21    ";"Agglomeratie Haarlem (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR22    ";"Zaanstreek (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR23    ";"Groot-Amsterdam (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR24    ";"Het Gooi en Vechtstreek (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR25    ";"Agglomeratie Leiden en Bollenstreek (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR26    ";"Agglomeratie 's-Gravenhage (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR27    ";"Delft en Westland (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR28    ";"Oost-Zuid-Holland (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR29    ";"Groot-Rijnmond (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR30    ";"Zuidoost-Zuid-Holland (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR31    ";"Zeeuwsch-Vlaanderen (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR32    ";"Overig Zeeland (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR33    ";"West-Noord-Brabant (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR34    ";"Midden-Noord-Brabant (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR35    ";"Noordoost-Noord-Brabant (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR36    ";"Zuidoost-Noord-Brabant (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR37    ";"Noord-Limburg (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR38    ";"Midden-Limburg (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR39    ";"Zuid-Limburg (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"CR40    ";"Flevoland (CR)";"CR = COROP-gebied
+
+Regionaal niveau tussen gemeenten en provincies in. In 1970 ontworpen door de Coördinatie Commissie Regionaal Onderzoeksprogramma, waaraan de indeling haar naam dankt. Nederland telt 40 COROP-gebieden."
+"GM0361  ";"Alkmaar";"Gemeentelijke herindeling per 01-01-2015
+Begindatum voor 1830"
+"GM0034  ";"Almere";"Ontstaan per 01-01-1984"
+"GM0484  ";"Alphen aan den Rijn";"Gemeentelijke herindeling per 01-01-2014
+Naamswijziging per 01-01-1918"
+"GM0307  ";"Amersfoort";"Begindatum voor 1830"
+"GM0363  ";"Amsterdam";"Begindatum voor 1830"
+"GM0200  ";"Apeldoorn";"Begindatum voor 1830"
+"GM0202  ";"Arnhem";"Begindatum voor 1830"
+"GM0758  ";"Breda";"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830"
+"GM0503  ";"Delft";"Begindatum voor 1830"
+"GM0505  ";"Dordrecht";"Begindatum voor 1830"
+"GM0228  ";"Ede";"Begindatum voor 1830"
+"GM0772  ";"Eindhoven";"Begindatum voor 1830"
+"GM0114  ";"Emmen";"Gemeentelijke herindeling per 01-01-1998
+Begindatum voor 1830"
+"GM0153  ";"Enschede";"Begindatum voor 1830"
+"GM0518  ";"'s-Gravenhage (gemeente)";"Begindatum voor 1830"
+"GM0014  ";"Groningen (gemeente)";"Gemeentelijke herindeling per 01-01-2019
+Begindatum voor 1830"
+"GM0392  ";"Haarlem";"Begindatum voor 1830"
+"GM0394  ";"Haarlemmermeer";"Gemeentelijke herindeling per 01-01-2019
+Begindatum 16-11-1855"
+"GM0796  ";"'s-Hertogenbosch";"Gemeentelijke herindeling per 01-01-2015
+Gemeentelijke herindeling per 01-01-1996
+Begindatum voor 1830"
+"GM0080  ";"Leeuwarden";"Gemeentelijke herindeling per 01-01-2018
+Gemeentelijke herindeling per 01-01-2014
+Begindatum voor 1830"
+"GM0546  ";"Leiden";"Begindatum voor 1830"
+"GM0935  ";"Maastricht";"Begindatum voor 1830"
+"GM0268  ";"Nijmegen";"Begindatum voor 1830"
+"GM0599  ";"Rotterdam";"Begindatum voor 1830"
+"GM0855  ";"Tilburg";"Gemeentelijke herindeling per 01-01-1997
+Begindatum voor 1830"
+"GM0344  ";"Utrecht (gemeente)";"Gemeentelijke herindeling per 01-01-2001
+Begindatum voor 1830"
+"GM0983  ";"Venlo";"Gemeentelijke herindeling per 01-01-2010
+Gemeentelijke herindeling per 01-01-2001
+Begindatum 02-01-1839"
+"GM1783  ";"Westland";"Ontstaan per 01-01-2004"
+"GM0479  ";"Zaanstad";"Ontstaan per 01-01-1974"
+"GM0637  ";"Zoetermeer";"Begindatum voor 1830"
+"GM0193  ";"Zwolle";"Begindatum voor 1830"
+"Periods"
+Key;Title;Description;Status
+"2012JJ00";"2012";"";"Definitief"
+"2015JJ00";"2015";"";"Definitief"
+"2018JJ00";"2018";"";"Definitief"
